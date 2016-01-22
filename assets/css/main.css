@@ -1,0 +1,92 @@
+.navbar-right span {
+	color: #9d9d9d;
+}
+.black_header {
+	background : black;
+}
+.navbar-header  img {
+	padding-top: 5px;
+}
+.wrap {
+	padding-top: 50px;
+	padding-bottom: 150px;
+}
+
+.greay {
+	color: #9d9d9d;
+}
+
+.greay:hover {
+	cursor:pointer;
+}
+
+.test{
+	margin-top:15px;
+}
+
+.low_font {
+	font-size: 0.8em;
+}
+
+.img {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border: none;
+	width: 40px;
+	height: 40px;
+}
+
+.circle {
+	border-radius: 50%;
+	border: 2px solid #eee;
+}
+
+.in_cover {
+	color:red;
+}
+
+.footer {
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 30px;
+	background: #999;
+}
+
+.messages {
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	right: 0;
+	bottom: 30px;
+}
+
+.messages .container {
+	position: relative;
+	z-index: 0;
+}
+
+.messages-box {
+	position: absolute;
+	z-index: 0;
+	bottom: 100%;
+	right: 15px;
+	width: 300px;
+}
+
+.checked_btn{
+	display: none;
+}
+
+.loading{
+	display:none;
+	position:absolute;
+	left:50%;
+	top:50%;
+	padding-left:20px;
+	padding-right:20px;
+	background:#eee;
+}

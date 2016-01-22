@@ -1,0 +1,29 @@
+.wrap{
+    display:block;
+    background: #eee;
+}
+.form_group{
+    display: block;
+    padding:30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background: #e6e1e1;
+}
+
+.form_group h3{
+    margin-top: -45px;
+    margin-left: -10px;
+}
+
+.form_group label{
+    margin-left: -10px;
+}
+
+
+.list_user{
+    display:block;
+    height: 200px;
+    margin-top: 20px;
+    width: 99%;
+    background-color: white;
+}

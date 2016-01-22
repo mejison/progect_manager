@@ -1,0 +1,22 @@
+RewriteEngine on
+RewriteRule \.(js|css|pdf)$ - [L]
+
+# Редірект на домен без www
+Options +FollowSymLinks
+RewriteCond %{HTTP_HOST} ^www\.cp.div-art\.com.ua$ [NC]
+RewriteRule ^(.*)$ http://cp.div-art.com.ua/$1 [R=301,L]
+
+# Доставляє завершаючий слеш
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+
+# Приховує index.php
+RewriteCond    %{REQUEST_FILENAME}    !-f 
+RewriteCond    %{REQUEST_FILENAME}    !-d 
+RewriteRule    ^(.*)$ index.php?$1 [QSA,L]
+
+# Редірект на адресу без index.php
+RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
